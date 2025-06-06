@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rex Jemar Latayada | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen">
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Background Shapes -->
+  <div class="shape w-[400px] h-[400px] top-[-100px] right-[-100px]"></div>
+  <div class="shape w-[500px] h-[500px] bottom-[-200px] left-[-200px]"></div>
+
+  <div class="container mx-auto px-4 py-16 max-w-5xl">
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-between items-center mb-16">
+      <div class="text-2xl font-bold gradient-text mb-6 md:mb-0">Rexxy<span class="text-white">.</span>dev</div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+          <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+          <li><a href="#connect" class="text-gray-400 hover:text-white transition-colors">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-[80vh] flex flex-col justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-sm text-[#64ffda] mb-4 animate-in">Hello, I'm</p>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-in animate-in-delay-1">
+            Rex Jemar <span class="gradient-text">Latayada</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-gray-400 mb-6 animate-in animate-in-delay-2">
+            2nd Year BSIT Student
+          </h2>
+          <p class="text-gray-400 mb-8 animate-in animate-in-delay-3">
+            Currently studying at <span class="text-white">TUP Manila</span>, focusing on building my skills in programming and technology.
+          </p>
+          <div class="animate-in animate-in-delay-4">
+            <p class="text-lg italic text-gray-300 border-l-4 border-[#64ffda] pl-4">
+              "Code hard, stay curious."
+            </p>
+          </div>
+        </div>
+
+        <!-- Profile Picture -->
+        <div class="relative">
+          <div class="profile-container floating">
+            <div class="profile-border"></div>
+            <div class="profile-pic">
+              <img src="myprofile.jpg" alt="Rex Jemar Latayada" class="profile-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <h2 class="text-3xl font-bold mb-12 text-center">
+        About <span class="gradient-text">Me</span>
+      </h2>
+      <div class="card p-8 rounded-xl">
+        <p class="text-gray-300 leading-relaxed">
+         Hi! I’m a 2nd year BSIT student at the Technological University of the Philippines – Manila. I’ve always been interested in technology, and even before college, I already had some experience with programming languages like C, C++, Python, and Arduino. This early exposure gave me a good foundation to build on once I started my studies.
+         Since then, I’ve been exploring different areas in tech, including web development and embedded systems. I like learning by doing — creating projects, experimenting with code, and solving problems along the way. It’s not always easy, and I don’t learn everything right away, but I make sure to keep trying and improving.
+         I’m excited about where this journey will take me and I’m committed to growing as a developer one step at a time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <h2 class="text-3xl font-bold mb-12 text-center">
+        Technical <span class="gradient-text">Skills</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card p-8 rounded-xl">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-code mr-3 text-[#64ffda]"></i>
+            Programming Languages
+          </h3>
+          <div class="flex flex-wrap gap-3" id="languages-container">
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">C</span>
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">C++</span>
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">Java</span>
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">Python</span>
+          </div>
+        </div>
+
+        <div class="card p-8 rounded-xl">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-globe mr-3 text-[#64ffda]"></i>
+            Web Development
+          </h3>
+          <div class="flex flex-wrap gap-3" id="web-container">
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">HTML</span>
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">CSS</span>
+          </div>
+        </div>
+
+        <div class="card p-8 rounded-xl">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-microchip mr-3 text-[#64ffda]"></i>
+            Embedded Systems
+          </h3>
+          <div class="flex flex-wrap gap-3" id="embedded-container">
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">Arduino</span>
+          </div>
+        </div>
+
+        <div class="card p-8 rounded-xl">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-gamepad mr-3 text-[#64ffda]"></i>
+            Game Development
+          </h3>
+          <div class="flex flex-wrap gap-3" id="game-container">
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">Raylib</span>
+          </div>
+        </div>
+
+        <div class="card p-8 rounded-xl md:col-span-2">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-database mr-3 text-[#64ffda]"></i>
+            Database
+          </h3>
+          <div class="flex flex-wrap gap-3" id="db-container">
+            <span class="tech-pill px-4 py-2 bg-[#1a1a1a] rounded-full border border-[#64ffda33] text-sm">SQLite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="py-20">
+      <h2 class="text-3xl font-bold mb-12 text-center">
+        Let's <span class="gradient-text">Connect</span>
+      </h2>
+      <div class="flex justify-center space-x-8 md:space-x-16">
+        <a href="https://www.facebook.com/rj.latayada" class="social-icon flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-[#1a1a1a] flex items-center justify-center mb-2 border border-[#64ffda33]">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </div>
+          <span class="text-sm text-gray-400">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/rexxy.qt/" class="social-icon flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-[#1a1a1a] flex items-center justify-center mb-2 border border-[#64ffda33]">
+            <i class="fab fa-instagram text-xl"></i>
+          </div>
+          <span class="text-sm text-gray-400">Instagram</span>
+        </a>
+        <a href="https://github.com/" class="social-icon flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-[#1a1a1a] flex items-center justify-center mb-2 border border-[#64ffda33]">
+            <i class="fab fa-github text-xl"></i>
+          </div>
+          <span class="text-sm text-gray-400">GitHub</span>
+        </a>
+        <a href="https://www.google.com/maps/place/Pinagsabugan+Creek/@14.658656,120.9555216,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b44c6469eb29:0xcbe43a62e509595e!8m2!3d14.6582166!4d120.957994!16s%2Fg%2F11b6b4zprg?entry=ttu&g_ep=EgoyMDI1MDYwMy4wIKXMDSoASAFQAw%3D%3D" class="social-icon flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-[#1a1a1a] flex items-center justify-center mb-2 border border-[#64ffda33]">
+            <i class="fas fa-map-marker-alt text-xl"></i>
+          </div>
+          <span class="text-sm text-gray-400">Maps</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800 mt-12">
+      <p>© 2025 Rex Jemar Latayada. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
