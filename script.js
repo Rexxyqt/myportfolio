@@ -24,7 +24,6 @@ document.addEventListener('mouseup', () => {
   cursorFollower.style.height = '40px';
 });
 
-// Animate tech pills
 function animateTechPills() {
   ['languages-container', 'web-container', 'embedded-container', 'game-container', 'db-container'].forEach(id => {
     const container = document.getElementById(id);
@@ -39,7 +38,6 @@ function animateTechPills() {
   });
 }
 
-// Trigger animation when #skills enters view
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting && entry.target.id === 'skills') {
@@ -50,7 +48,6 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.getElementById('skills'));
 
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
